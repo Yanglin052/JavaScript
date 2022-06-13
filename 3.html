@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <script>
+        function checkEmailId(str) {
+            var mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+            if (str.value.match(mailFormat)) {
+                alert("Valid email address!");
+                return true;
+            }
+            else {
+                alert("You have entered an invalid email address!");
+                return false;
+            }
+        }
+
+    </script>
+</body>
+</html>

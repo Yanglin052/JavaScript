@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+
+    <script>
+        function truncate(str,maxlength){
+            return (str.length > maxlength) ?
+            str.slice(0, maxlength - 1) + '…' : str;
+        }
+
+        var str1 = truncate("What I'd like to tell on this topic is:", 20);
+        var str2 = truncate("Hi everyone!", 20);
+
+        document.getElementById("demo1").innerHTML = str1;
+        document.getElementById("demo2").innerHTML = str2;
+
+    </script>
+</body>
+</html>

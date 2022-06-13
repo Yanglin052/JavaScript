@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+
+    <script>
+        const person = ["James", "Brennie"];
+        document.getElementById("demo1").innerHTML = person;
+
+        person.push("Robert");
+        document.getElementById("demo2").innerHTML = person;
+
+        person[(person.length+1)/2-1] = "Calvin";
+        document.getElementById("demo3").innerHTML = person;
+
+        person.shift();
+        document.getElementById("demo4").innerHTML = person;
+
+        person.unshift("Rose","Regal");
+        document.getElementById("demo5").innerHTML = person;
+        
+    </script>
+
+</body>
+</html>
